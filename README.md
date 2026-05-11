@@ -18,16 +18,22 @@ Include the following `_config.yml` file to your GitHub Pages site. Update the
 `title` and `description` fields accordingly.
 
 ```yaml
+# Front Matter global settings
+# ----------------------------
+
 # Default title
-title: The title of your site
+title: "The title of your site"
 
 # Default description
 description: "A short description of your site's purpose"
 
-# Use Jekyll Primer theme tagged to commit hash in main
-remote_theme: 0xNixxy/primer-dark@d10b1ea
+# Build settings
+# --------------
 
-# Plugins required for Primer theme
+# Use Primer Dark theme tagged to commit hash
+remote_theme: 0xNixxy/primer-dark@fe9ef34
+
+# Plugins required for Primer Dark
 plugins:
   - jekyll-remote-theme
 ```
@@ -37,3 +43,10 @@ plugins:
 Primer Dark uses a custom stylesheet at `/assets/css/style.scss` to add the
 automatic dark mode for Primer. If you wish to add your own custom styles,
 update this custom stylesheet accordingly.
+
+## Technical Notes
+
+1. This Primer Dark commit is built on `pages-themes/primer@be021de` dated
+   Oct 2025.
+
+1. In dark mode, code blocks use Base16 Monokai Dark for syntax style.
